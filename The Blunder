@@ -1,2 +1,6 @@
 SELECT CEIL(AVG(salary) - AVG(REPLACE(salary, '0', '')))
 FROM employees;
+
+revision;
+SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY,'0',''))) 
+FROM EMPLOYEES;
