@@ -1,0 +1,8 @@
+SELECT 
+    CEIL(AVG(SALARY) - AVG(REPLACE(SALARY, 0, '')))
+FROM EMPLOYEES;
+
+/*
+- we use CEIL function to round it to the next integer. ROUND function was rounding it off to the previous integer.
+- we use REPLACE function to replace all the 0s in the salary with ''
+*/
